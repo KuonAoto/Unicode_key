@@ -1,12 +1,12 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Tue Dec 17 18:26:21 2024
+Linker Map File - Created Tue Dec 17 23:18:56 2024
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                  RES_VECT       code   0x000000    program   0x000002
                    .cinit    romdata   0x000001    program   0x000004
-                MAIN_PROG       code   0x000003    program   0x0000d2
+                MAIN_PROG       code   0x000003    program   0x0000f8
 .config_2007_BUILD/DEFAULT/PRODUCTION/MAIN.O       code   0x002007    program   0x000002
 .config_2008_BUILD/DEFAULT/PRODUCTION/MAIN.O       code   0x002008    program   0x000002
 
@@ -15,27 +15,27 @@ Linker Map File - Created Tue Dec 17 18:26:21 2024
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00006b      
+                            0x000000    0x00007e      
                             0x002007    0x002008      
-            110 out of 8455 program addresses used, program memory utilization is 1%
+            129 out of 8455 program addresses used, program memory utilization is 1%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                     DLP1   0x000063    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                     DLP2   0x000065    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                      DLY   0x000061    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                     DLP1   0x000076    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                     DLP2   0x000078    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                      DLY   0x000074    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                     START   0x000003    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                   check_b   0x000037    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                   check_d   0x00004b    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-             check_inpnum   0x00004c    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-        check_inpnum_loop   0x00004d    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+             check_inpnum   0x00005f    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+        check_inpnum_loop   0x000060    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                 main_loop   0x000033    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                  mov_old   0x000052    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-               send_ASCII   0x00005b    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                send_wait   0x00005d    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                  mov_old   0x000065    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+               send_ASCII   0x00006e    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                send_wait   0x000070    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                     setup   0x000003    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
 
 
@@ -48,13 +48,13 @@ Linker Map File - Created Tue Dec 17 18:26:21 2024
                 main_loop   0x000033    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                   check_b   0x000037    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
                   check_d   0x00004b    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-             check_inpnum   0x00004c    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-        check_inpnum_loop   0x00004d    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                  mov_old   0x000052    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-               send_ASCII   0x00005b    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                send_wait   0x00005d    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                      DLY   0x000061    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                     DLP1   0x000063    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
-                     DLP2   0x000065    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+             check_inpnum   0x00005f    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+        check_inpnum_loop   0x000060    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                  mov_old   0x000065    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+               send_ASCII   0x00006e    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                send_wait   0x000070    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                      DLY   0x000074    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                     DLP1   0x000076    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
+                     DLP2   0x000078    program     static D:\program\Unicode_key\Unicode_key\Unicode_key.X\main.asm
 
 

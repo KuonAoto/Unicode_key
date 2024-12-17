@@ -147,6 +147,32 @@ check_b:
     
     
 check_d:
+    
+    MOVFW   PORTD	    ;8～Fまでのスイッチの入力を取ってくる
+    MOVWF   now_d
+    XORWF   old_d,w	    ;一個昔の値とXORすることで変わったかを判定
+    BTFSC   STATUS,Z	    ;変わってなかったら次のチェックに移る
+    RETURN
+    MOVWF   tmp_xor
+    ANDWF   now_d,w	    ;押したときか離したときか判定
+    BTFSS   STATUS,Z	    ;離した時だった場合dのチェックに移る
+    RETURN	
+    
+    ;押したとき
+    
+    CALL    DLY		    ;チャタリング対策で待つ
+    MOVFW   PORTD   	    ;再びとって、
+    SUBWF   now_d,w	    ;変わってなかったら押した判定
+    BTFSS   STATUS,Z
+    RETURN
+    
+    ;押した判定
+    CALL    check_inpnum    ;0001 0000ー＞4
+    MOVLW   0x30
+    IORWF   num_count,w
+    ;MOVFW   num_count	    ;inp_numに移動
+    MOVWF   inp_num
+    CALL    send_ASCII
     RETURN
     
 ;tmp_xorに入れてここにとばす

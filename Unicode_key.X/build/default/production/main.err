@@ -8,5 +8,5 @@ Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 73 : Regi
 Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 75 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 86 : Register in operand not in bank 0.  Ensure that bank bits are correct.
 Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 93 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[305] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 161 : Using default destination of 1 (file).
-Warning[205] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 207 : Found directive in column 1. (END)
+Message[305] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 187 : Using default destination of 1 (file).
+Warning[205] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 233 : Found directive in column 1. (END)
