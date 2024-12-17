@@ -1,4 +1,4 @@
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  1
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -49,177 +49,216 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   0000002E            00032         now_d
   0000002F            00033         now_e
                       00034     
-                      00035     ENDC
-                      00036  
-                      00037  
-                      00038 RES_VECT  CODE    0x0000            ; processor reset vector
-0000   2???           00039     GOTO    START                   ; go to beginning of program
-                      00040 
-                      00041 ; TODO ADD INTERRUPTS HERE IF USED
+  00000030            00035         CNT1
+  00000031            00036         CNT2
+                      00037     ENDC
+                      00038  
+                      00039  
+                      00040 RES_VECT  CODE    0x0000            ; processor reset vector
+0000   2???           00041     GOTO    START                   ; go to beginning of program
                       00042 
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  2
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00043 MAIN_PROG CODE                      ; let linker place main program
+                      00043 ; TODO ADD INTERRUPTS HERE IF USED
                       00044 
-0000                  00045 START
+                      00045 MAIN_PROG CODE                      ; let linker place main program
                       00046 
-                      00047    
-                      00048     
-                      00049     
-0000                  00050 setup:
-0000   1683           00051     BSF     STATUS,RP0
-0001   1703           00052     BSF     STATUS,RP1      ;Bank3
+0000                  00047 START
+                      00048 
+                      00049    
+                      00050     
+                      00051     
+0000                  00052 setup:
                       00053     
-0002   1683 1703      00054     banksel ANSEL
+                      00054     
+0000   1683 1703      00055     banksel ANSEL
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0004   0188           00055     CLRF    ANSEL           ;すべてデジタル
+0002   0188           00056     CLRF    ANSEL           ;すべてデジタル
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0005   0189           00056     CLRF    ANSELH          ;8～13も同様に
-                      00057     
-0006   018B           00058     CLRF    INTCON          ;割り込み禁止
-                      00059     
-0007   1303           00060     BCF     STATUS,RP1      ;Bank2
-                      00061     
-0008   3074           00062     MOVLW   B'01110100'
+0003   0189           00057     CLRF    ANSELH          ;8～13も同様に
+                      00058     
+0004   018B           00059     CLRF    INTCON          ;割り込み禁止
+                      00060     
+0005   1683 1303      00061     banksel OSCCON
+0007   3074           00062     MOVLW   B'01110100'
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0009   008F           00063     MOVWF   OSCCON          ;内部クロックで8Mhzに設計
+0008   008F           00063     MOVWF   OSCCON          ;内部クロックで8Mhzに設計
                       00064     
-000A   1683 1303      00065     banksel TRISA
-000C   303F           00066     MOVLW   b'00111111'     ;RA0～RA5まで入力
+0009   1683 1303      00065     banksel TRISA
+000B   303F           00066     MOVLW   b'00111111'     ;RA0～RA5まで入力
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-000D   0085           00067     MOVWF   TRISA
-000E   30FF           00068     MOVLW   0xFF            ;すべて入力
+000C   0085           00067     MOVWF   TRISA
+000D   30FF           00068     MOVLW   0xFF            ;すべて入力
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-000F   0086           00069     MOVWF   TRISB
-0010   3080           00070     MOVLW   b'10000000'     ;RX（RC7）のみ入力設定
+000E   0086           00069     MOVWF   TRISB
+000F   3080           00070     MOVLW   b'10000000'     ;RX（RC7）のみ入力設定
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0011   0087           00071     MOVWF   TRISC
-0012   30FF           00072     MOVLW   0xFF            ;すべて入力
+0010   0087           00071     MOVWF   TRISC
+0011   30FF           00072     MOVLW   0xFF            ;すべて入力
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0013   0088           00073     MOVWF   TRISD
-0014   3003           00074     MOVLW   b'00000011'     ;RE0とRE1のみ入力
+0012   0088           00073     MOVWF   TRISD
+0013   3003           00074     MOVLW   b'00000011'     ;RE0とRE1のみ入力
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0015   0089           00075     MOVWF   TRISE
+0014   0089           00075     MOVWF   TRISE
                       00076     
-0016   1283 1303      00077     banksel PORTA
-0018   0185           00078     CLRF    PORTA           ;ポートの初期化
-0019   0186           00079     CLRF    PORTB
-001A   0187           00080     CLRF    PORTC
-001B   0188           00081     CLRF    PORTD
-001C   0189           00082     CLRF    PORTE       
+0015   1283 1303      00077     banksel PORTA
+0017   0185           00078     CLRF    PORTA           ;ポートの初期化
+0018   0186           00079     CLRF    PORTB
+0019   0187           00080     CLRF    PORTC
+001A   0188           00081     CLRF    PORTD
+001B   0189           00082     CLRF    PORTE       
                       00083     
-001D   1683 1303      00084     banksel TXSTA
-001F   3024           00085     MOVLW   b'00100100'
+001C   1683 1303      00084     banksel TXSTA
+001E   3024           00085     MOVLW   b'00100100'
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0020   0098           00086     MOVWF   TXSTA           ;非同期モード　8ビット　パリティなし
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  3
+001F   0098           00086     MOVWF   TXSTA           ;非同期モード　8ビット　パリティなし
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0021   3090           00087     MOVLW   b'10010000'    
-0022   0098           00088     MOVWF   RCSTA   ;受信情報設定
-                      00089     
-0023   3033           00090     MOVLW   D'51'           ;9600ボー
+0020   1283 1303      00087     banksel RCSTA
+0022   3090           00088     MOVLW   b'10010000'    
+0023   0098           00089     MOVWF   RCSTA   ;受信情報設定
+                      00090     
+0024   1683 1303      00091     banksel SPBRG
+0026   3033           00092     MOVLW   D'51'           ;9600ボー
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-0024   0099           00091     MOVWF   SPBRG           
-                      00092     
-0025   0806           00093     MOVF    PORTB,w         ;0～7までのスイッチの入力を取ってくる
-0026   00AC           00094     MOVWF   now_b
-0027   00A7           00095     MOVWF   old_b
-                      00096 
-0028   0808           00097     MOVFW   PORTD           ;8～Fまでのスイッチの入力を取ってくる
-0029   00AE           00098     MOVWF   now_d
-002A   00A9           00099     MOVWF   old_d
-                      00100     
-002B                  00101 main_loop:
-                      00102     
-002B   2???           00103     CALL    check_b
-002C   2???           00104     CALL    check_d
+0027   0099           00093     MOVWF   SPBRG           
+                      00094     
+0028   1283           00095     BCF     STATUS,RP0
+0029   1303           00096     BCF     STATUS,RP1
+                      00097     
+002A   0806           00098     MOVF    PORTB,w         ;0～7までのスイッチの入力を取ってくる
+002B   00AC           00099     MOVWF   now_b
+002C   00A7           00100     MOVWF   old_b
+                      00101 
+002D   0808           00102     MOVFW   PORTD           ;8～Fまでのスイッチの入力を取ってくる
+002E   00AE           00103     MOVWF   now_d
+002F   00A9           00104     MOVWF   old_d
                       00105     
-                      00106     
-002D   2???           00107     CALL    mov_old
-                      00108     
-002E   2???           00109     GOTO    main_loop
+0030                  00106 main_loop:
+                      00107     
+0030   2???           00108     CALL    check_b
+0031   2???           00109     CALL    check_d
                       00110     
                       00111     
-                      00112     
+0032   2???           00112     CALL    mov_old
                       00113     
-002F                  00114 check_b: 
+0033   2???           00114     GOTO    main_loop
                       00115     
-002F   0806           00116     MOVFW   PORTB           ;0～7までのスイッチの入力を取ってくる
-0030   00AC           00117     MOVWF   now_b
-0031   0627           00118     XORWF   old_b,w         ;一個昔の値とXORすることで変わったかを判定
-0032   1D03           00119     BTFSS   STATUS,Z        ;変わってなかったらdのチェックに移る
-0033   0008           00120     RETURN
-0034   00A2           00121     MOVWF   tmp_xor
-0035   052C           00122     ANDWF   now_b,w         ;押したときか離したときか判定
-0036   1903           00123     BTFSC   STATUS,Z        ;離した時だった場合dのチェックに移る
-0037   0008           00124     RETURN      
-                      00125     
-                      00126     ;押したとき
-0038   2???           00127     CALL    check_inpnum    ;0001 0000ー＞4
-0039   0825           00128     MOVFW   num_count       ;inp_numに移動
-003A   00A3           00129     MOVWF   inp_num
-003B   2???           00130     CALL    send_ASCII
-003C   0008           00131     RETURN
+                      00116     
+                      00117     
+                      00118     
+0034                  00119 check_b: 
+                      00120     
+0034   0806           00121     MOVFW   PORTB           ;0～7までのスイッチの入力を取ってくる
+0035   00AC           00122     MOVWF   now_b
+0036   0627           00123     XORWF   old_b,w         ;一個昔の値とXORすることで変わったかを判定
+0037   1903           00124     BTFSC   STATUS,Z        ;変わってなかったらdのチェックに移る
+0038   0008           00125     RETURN
+0039   00A2           00126     MOVWF   tmp_xor
+003A   052C           00127     ANDWF   now_b,w         ;押したときか離したときか判定
+003B   1D03           00128     BTFSS   STATUS,Z        ;離した時だった場合dのチェックに移る
+003C   0008           00129     RETURN      
+                      00130     
+                      00131     ;押したとき
                       00132     
-                      00133     
-003D                  00134 check_d:
-003D   0008           00135     RETURN
-                      00136     
-                      00137 ;tmp_xorに入れてここにとばす
-                      00138 ;返り値　num_count
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  4
+003D   2???           00133     CALL    DLY             ;チャタリング対策で待つ
+003E   0806           00134     MOVFW   PORTB           ;再びとって、
+003F   022C           00135     SUBWF   now_b,w         ;変わってなかったら押した判定
+0040   1D03           00136     BTFSS   STATUS,Z
+0041   0008           00137     RETURN
+                      00138     
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-003E                  00139 check_inpnum:
-                      00140     
-003E   01A5           00141     CLRF   num_count    ;カウントリセット
-                      00142     
-003F                  00143 check_inpnum_loop:
-003F   1822           00144     BTFSC   tmp_xor,0       ;0ビット目が0だったら次スキップ
-0040   0008           00145     RETURN
+                      00139     ;押した判定
+0042   2???           00140     CALL    check_inpnum    ;0001 0000ー＞4
+0043   3030           00141     MOVLW   0x30
+0044   0425           00142     IORWF   num_count,w
+                      00143     ;MOVFW   num_count      ;inp_numに移動
+0045   00A3           00144     MOVWF   inp_num
+0046   2???           00145     CALL    send_ASCII
+0047   0008           00146     RETURN
+                      00147     
+                      00148     
+0048                  00149 check_d:
+0048   0008           00150     RETURN
+                      00151     
+                      00152 ;tmp_xorに入れてここにとばす
+                      00153 ;返り値　num_count
+0049                  00154 check_inpnum:
+                      00155     
+0049   01A5           00156     CLRF   num_count    ;カウントリセット
+                      00157     
+004A                  00158 check_inpnum_loop:
+004A   1822           00159     BTFSC   tmp_xor,0       ;0ビット目が0だったら次スキップ
+004B   0008           00160     RETURN
 Message[305]: Using default destination of 1 (file).
-0041   0CA2           00146     RRF     tmp_xor         ;右シフト
-Message[305]: Using default destination of 1 (file).
-0042   0AA5           00147     INCF    num_count       ;カウントをインクリメントしてループ
-0043   2???           00148     GOTO    check_inpnum_loop
-                      00149     
-                      00150     
-0044                  00151 mov_old:
-0044   082B           00152     MOVFW   now_a
-0045   00A6           00153     MOVWF   old_a
-0046   082C           00154     MOVFW   now_b
-0047   00A7           00155     MOVWF   old_b
-0048   082D           00156     MOVFW   now_c
-0049   00A8           00157     MOVWF   old_c
-004A   082E           00158     MOVFW   now_d
-004B   00A9           00159     MOVWF   old_d
-004C   0008           00160     RETURN
-                      00161 
-                      00162 ;wレジスタに値をいれてここに飛ばす
-004D                  00163 send_ASCII:
-004D   1283 1303      00164     banksel TXREG
+004C   0CA2           00161     RRF     tmp_xor         ;右シフト
+004D   0AA5           00162     INCF    num_count,f     ;カウントをインクリメントしてループ
+004E   2???           00163     GOTO    check_inpnum_loop
+                      00164     
                       00165     
-004F                  00166 send_wait:
-Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
-004F   1C98           00167     BTFSS   TXSTA,TRMT
-0050   2???           00168     GOTO    send_wait
-0051   0099           00169     MOVWF   TXREG
-0052   0008           00170     RETURN
-                      00171     
+004F                  00166 mov_old:
+004F   082B           00167     MOVFW   now_a
+0050   00A6           00168     MOVWF   old_a
+0051   082C           00169     MOVFW   now_b
+0052   00A7           00170     MOVWF   old_b
+0053   082D           00171     MOVFW   now_c
+0054   00A8           00172     MOVWF   old_c
+0055   082E           00173     MOVFW   now_d
+0056   00A9           00174     MOVWF   old_d
+0057   0008           00175     RETURN
+                      00176 
+                      00177 ;wレジスタに値をいれてここに飛ばす
+0058                  00178 send_ASCII:
+0058   1283 1303      00179     banksel TXREG
+                      00180     
+005A                  00181 send_wait:
+005A   1E0C           00182     BTFSS   PIR1,TXIF
+005B   2???           00183     GOTO    send_wait
+005C   0099           00184     MOVWF   TXREG
+005D   0008           00185     RETURN
+                      00186     
+                      00187     
+                      00188 ;チャタリング対策wait
+005E                  00189 DLY:
+                      00190     
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+005E   3064           00191     MOVLW   d'100'   ;0.5ms
+005F   00B0           00192     MOVWF   CNT1
+                      00193     
+0060                  00194 DLP1:
+0060   30C8           00195     MOVLW   d'200'  ;0.5ms
+0061   00B1           00196     MOVWF   CNT2
+                      00197     
+0062                  00198 DLP2:
+0062   0000           00199     NOP
+0063   0000           00200     NOP
+0064   0BB1           00201     DECFSZ  CNT2,f
+0065   2???           00202     GOTO    DLP2
+0066   0BB0           00203     DECFSZ  CNT1,f
+0067   2???           00204     GOTO    DLP1
+0068   0008           00205     RETURN
+                      00206     
 Warning[205]: Found directive in column 1. (END)
-27C4 3FFF             00172 END
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  5
+27C4 3FFF             00207 END
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  6
 
 
 SYMBOL TABLE
@@ -278,7 +317,7 @@ BRG6                              00000006
 BRG7                              00000007
 BRG8                              00000000
 BRG9                              00000001
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  6
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  7
 
 
 SYMBOL TABLE
@@ -337,7 +376,7 @@ CHS0                              00000002
 CHS1                              00000003
 CHS2                              00000004
 CHS3                              00000005
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  7
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  8
 
 
 SYMBOL TABLE
@@ -348,6 +387,8 @@ CKP                               00000004
 CM1CON0                           00000107
 CM2CON0                           00000108
 CM2CON1                           00000109
+CNT1                              00000030
+CNT2                              00000031
 CREN                              00000004
 CSRC                              00000007
 D                                 00000005
@@ -357,6 +398,9 @@ DC1B0                             00000004
 DC1B1                             00000005
 DC2B0                             00000004
 DC2B1                             00000005
+DLP1                              00000060
+DLP2                              00000062
+DLY                               0000005E
 D_A                               00000005
 D_NOT_A                           00000005
 ECCPAS                            0000009C
@@ -391,17 +435,17 @@ I2C_STOP                          00000004
 INDF                              00000000
 INTCON                            0000000B
 INTE                              00000004
-INTEDG                            00000006
-INTF                              00000001
-IOCB                              00000096
-IOCB0                             00000000
-IOCB1                             00000001
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  8
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE  9
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+INTEDG                            00000006
+INTF                              00000001
+IOCB                              00000096
+IOCB0                             00000000
+IOCB1                             00000001
 IOCB2                             00000002
 IOCB3                             00000003
 IOCB4                             00000004
@@ -450,17 +494,17 @@ P1M0                              00000006
 P1M1                              00000007
 PCL                               00000002
 PCLATH                            0000000A
-PCON                              0000008E
-PDC0                              00000000
-PDC1                              00000001
-PDC2                              00000002
-PDC3                              00000003
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE  9
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 10
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+PCON                              0000008E
+PDC0                              00000000
+PDC1                              00000001
+PDC2                              00000002
+PDC3                              00000003
 PDC4                              00000004
 PDC5                              00000005
 PDC6                              00000006
@@ -509,17 +553,17 @@ RB7                               00000007
 RBIE                              00000003
 RBIF                              00000000
 RC0                               00000000
-RC1                               00000001
-RC2                               00000002
-RC3                               00000003
-RC4                               00000004
-RC5                               00000005
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE 10
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 11
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+RC1                               00000001
+RC2                               00000002
+RC3                               00000003
+RC4                               00000004
+RC5                               00000005
 RC6                               00000006
 RC7                               00000007
 RC8_9                             00000006
@@ -568,17 +612,17 @@ SRCON                             00000185
 SREN                              00000005
 SSPADD                            00000093
 SSPBUF                            00000013
-SSPCON                            00000014
-SSPCON2                           00000091
-SSPEN                             00000005
-SSPIE                             00000003
-SSPIF                             00000003
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE 11
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 12
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+SSPCON                            00000014
+SSPCON2                           00000091
+SSPEN                             00000005
+SSPIE                             00000003
+SSPIF                             00000003
 SSPM0                             00000000
 SSPM1                             00000001
 SSPM2                             00000002
@@ -627,17 +671,17 @@ TMR2IE                            00000001
 TMR2IF                            00000001
 TMR2ON                            00000002
 TOUTPS0                           00000003
-TOUTPS1                           00000004
-TOUTPS2                           00000005
-TOUTPS3                           00000006
-TRISA                             00000085
-TRISA0                            00000000
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE 12
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 13
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+TOUTPS1                           00000004
+TOUTPS2                           00000005
+TOUTPS3                           00000006
+TRISA                             00000085
+TRISA0                            00000000
 TRISA1                            00000001
 TRISA2                            00000002
 TRISA3                            00000003
@@ -686,17 +730,17 @@ TUN4                              00000004
 TX8_9                             00000006
 TX9                               00000006
 TX9D                              00000000
-TXD8                              00000000
-TXEN                              00000005
-TXIE                              00000004
-TXIF                              00000004
-TXREG                             00000019
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE 13
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 14
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+TXD8                              00000000
+TXEN                              00000005
+TXIE                              00000004
+TXIF                              00000004
+TXREG                             00000019
 TXSTA                             00000098
 UA                                00000001
 ULPWUE                            00000005
@@ -745,17 +789,17 @@ _BOREN_SBODEN                     00003DFF
 _BOR_NSLEEP                       00003EFF
 _BOR_OFF                          00003CFF
 _BOR_ON                           00003FFF
-_BOR_SBODEN                       00003DFF
-_CONFIG1                          00002007
-_CONFIG2                          00002008
-_CPD_OFF                          00003FFF
-_CPD_ON                           00003F7F
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE 14
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 15
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+_BOR_SBODEN                       00003DFF
+_CONFIG1                          00002007
+_CONFIG2                          00002008
+_CPD_OFF                          00003FFF
+_CPD_ON                           00003F7F
 _CP_OFF                           00003FFF
 _CP_ON                            00003FBF
 _DEBUG_OFF                        00003FFF
@@ -804,20 +848,20 @@ _WRT_HALF                         000039FF
 _WRT_OFF                          00003FFF
 _XT_OSC                           00003FF9
 __16F887                          00000001
-check_b                           0000002F
-check_d                           0000003D
-check_inpnum                      0000003E
-check_inpnum_loop                 0000003F
-inp_func                          00000024
-MPASM 5.87                          MAIN.ASM   12-7-2024  18:06:59         PAGE 15
+MPASM 5.87                          MAIN.ASM   12-17-2024  18:26:20         PAGE 16
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
+check_b                           00000034
+check_d                           00000048
+check_inpnum                      00000049
+check_inpnum_loop                 0000004A
+inp_func                          00000024
 inp_num                           00000023
-main_loop                         0000002B
-mov_old                           00000044
+main_loop                         00000030
+mov_old                           0000004F
 now_a                             0000002B
 now_b                             0000002C
 now_c                             0000002D
@@ -829,8 +873,8 @@ old_b                             00000027
 old_c                             00000028
 old_d                             00000029
 old_e                             0000002A
-send_ASCII                        0000004D
-send_wait                         0000004F
+send_ASCII                        00000058
+send_wait                         0000005A
 setup                             00000000
 status_tmp                        00000021
 tmp_xor                           00000022
@@ -838,6 +882,6 @@ w_tmp                             00000020
 
 Errors   :     0
 Warnings :     1 reported,     0 suppressed
-Messages :    13 reported,     0 suppressed
+Messages :    11 reported,     0 suppressed
 
 

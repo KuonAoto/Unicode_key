@@ -32,6 +32,8 @@
 	now_d
 	now_e
     
+	CNT1
+	CNT2
     ENDC
  
  
@@ -127,6 +129,14 @@ check_b:
     RETURN	
     
     ;押したとき
+    
+    CALL    DLY		    ;チャタリング対策で待つ
+    MOVFW   PORTB	    ;再びとって、
+    SUBWF   now_b,w	    ;変わってなかったら押した判定
+    BTFSS   STATUS,Z
+    RETURN
+    
+    ;押した判定
     CALL    check_inpnum    ;0001 0000ー＞4
     MOVLW   0x30
     IORWF   num_count,w
@@ -172,6 +182,26 @@ send_wait:
     BTFSS   PIR1,TXIF
     GOTO    send_wait
     MOVWF   TXREG
+    RETURN
+    
+    
+;チャタリング対策wait
+DLY:
+    
+    MOVLW   d'100'   ;0.5ms
+    MOVWF   CNT1
+    
+DLP1:
+    MOVLW   d'200'  ;0.5ms
+    MOVWF   CNT2
+    
+DLP2:
+    NOP
+    NOP
+    DECFSZ  CNT2,f
+    GOTO    DLP2
+    DECFSZ  CNT1,f
+    GOTO    DLP1
     RETURN
     
 END
