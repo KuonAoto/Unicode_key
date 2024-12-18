@@ -31,7 +31,19 @@
 	now_c
 	now_d
 	now_e
-    
+	
+	state_digit	;ステートフラグ
+			;0は入力前、1は1桁目、2は2桁目、3は3桁目、4が4桁目
+	
+			
+	digit0
+	digit1		;それぞれの桁の数字
+	digit2
+	digit3
+	digit4
+	
+	tmp_ASCII
+	
 	CNT1
 	CNT2
     ENDC
@@ -103,6 +115,8 @@ setup:
     MOVWF   now_d
     MOVWF   old_d
     
+    CLRF    state_digit
+    
 main_loop:
     
     CALL    check_b
@@ -138,11 +152,9 @@ check_b:
     
     ;押した判定
     CALL    check_inpnum    ;0001 0000ー＞4
-    MOVLW   0x30
-    IORWF   num_count,w
-    ;MOVFW   num_count	    ;inp_numに移動
+    MOVFW   num_count	    ;inp_numに移動
     MOVWF   inp_num
-    CALL    send_ASCII
+    CALL    state_check
     RETURN
     
     
@@ -168,11 +180,10 @@ check_d:
     
     ;押した判定
     CALL    check_inpnum    ;0001 0000ー＞4
-    MOVLW   0x30
-    IORWF   num_count,w
-    ;MOVFW   num_count	    ;inp_numに移動
+    MOVLW   0x08
+    ADDWF   num_count,w
     MOVWF   inp_num
-    CALL    send_ASCII
+    CALL    state_check
     RETURN
     
 ;tmp_xorに入れてここにとばす
@@ -200,6 +211,136 @@ mov_old:
     MOVWF   old_d
     RETURN
 
+;ステートごとの処理
+;入力したい数字はinp_numに入れて持ってくる
+state_check:
+    MOVLW   0x00
+    SUBWF   state_digit,w
+    BTFSC   STATUS,Z	    ;0だったら0の処理に飛ぶ
+    GOTO    state0
+    
+    ;0じゃなった場合
+    MOVFW   inp_num
+    CALL    change_ASCII
+    CALL    send_ASCII	    ;とりまinp_numを送る
+    
+    INCF    state_digit,f
+    MOVLW   0x04
+    SUBWF   state_digit,w
+    BTFSS   STATUS,Z	    
+    RETURN		    ;4以外の時は何もせずに戻る
+    CLRF    state_digit	    ;4になったら0に戻す
+    RETURN
+    
+state0:
+    ;初めのUを送信
+    MOVLW   'U'
+    CALL    send_ASCII
+    
+    MOVFW   PORTA
+    ANDLW   b'00111111'	    ;とりまマスク
+    MOVWF   now_a
+    
+    BTFSS   now_a,0	    ;RA0が1（押されてない）ならスキップ
+    GOTO    alphabet
+    BTFSS   now_a,1	    ;RA1が…
+    GOTO    area0
+    BTFSS   now_a,2
+    GOTO    area1
+    BTFSS   now_a,3
+    GOTO    area2
+    BTFSS   now_a,4
+    GOTO    area3
+    BTFSS   now_a,5
+    GOTO    area4
+        
+kana:
+    ;ひらがな入力
+    ;030に続いて入力されたものを送信
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '3'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVFW   inp_num
+    CALL    change_ASCII
+    CALL    send_ASCII
+    
+    MOVLW   0x03	    ;3桁目まで出力完了
+    MOVWF   state_digit
+    RETURN
+    
+alphabet:
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVFW   inp_num
+    CALL    change_ASCII
+    CALL    send_ASCII
+    
+    MOVLW   0x03	    ;3桁目まで出力完了
+    MOVWF   state_digit
+    RETURN
+    
+area0:
+    MOVLW   '0'
+    CALL    send_ASCII
+    GOTO    send_digit1
+    
+area1:
+    MOVLW   '1'
+    CALL    send_ASCII
+    GOTO    send_digit1
+
+area2:
+    MOVLW   '2'
+    CALL    send_ASCII
+    GOTO    send_digit1
+
+area3:
+    MOVLW   '3'
+    CALL    send_ASCII
+    GOTO    send_digit1
+    
+;4は14面
+area4:
+    MOVLW   'E'
+    CALL    send_ASCII
+    GOTO    send_digit1
+    
+send_digit1:
+    MOVFW   inp_num
+    CALL    change_ASCII
+    CALL    send_ASCII
+    
+    MOVLW   0x01	    ;1桁目まで出力完了
+    MOVWF   state_digit
+    RETURN
+    
+    
+    
+;wレジスタから取る
+change_ASCII:
+    ANDLW   0x0F	;とりまマスク
+    MOVWF   tmp_ASCII
+    SUBLW   0x09
+    BTFSS   STATUS,C	;9より大きかったらスキップ
+    GOTO    atof
+    MOVLW   0x30
+    IORWF   tmp_ASCII,w
+    RETURN
+atof:
+    MOVLW   0x09   
+    SUBWF   tmp_ASCII,f
+    MOVLW   0x40
+    IORWF   tmp_ASCII,w
+    RETURN
+    
+    
 ;wレジスタに値をいれてここに飛ばす
 send_ASCII:
     banksel TXREG
