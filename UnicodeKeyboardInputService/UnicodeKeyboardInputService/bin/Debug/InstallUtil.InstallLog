@@ -1,0 +1,68 @@
+﻿
+トランザクションのインストールを実行中です。
+
+インストール段階を開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+インストール段階で例外が発生しました。
+System.ComponentModel.Win32Exception: アカウント名とセキュリティ ID の間のマッピングは実行されませんでした。
+
+インストールのロールバックを開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+ロールバックの段階が正常に完了しました。
+
+トランザクション インストールが完了しました。
+
+トランザクションのインストールを実行中です。
+
+インストール段階を開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+インストール段階で例外が発生しました。
+System.ComponentModel.Win32Exception: アカウント名とセキュリティ ID の間のマッピングは実行されませんでした。
+
+インストールのロールバックを開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+ロールバックの段階が正常に完了しました。
+
+トランザクション インストールが完了しました。
+
+トランザクションのインストールを実行中です。
+
+インストール段階を開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+インストール段階で例外が発生しました。
+System.ComponentModel.Win32Exception: アカウント名が無効であるか、または存在しません。あるいは、指定したアカウント名のパスワードが無効です。
+
+インストールのロールバックを開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+ロールバックの段階が正常に完了しました。
+
+トランザクション インストールが完了しました。
+
+トランザクションのインストールを実行中です。
+
+インストール段階を開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+インストール段階で例外が発生しました。
+System.ComponentModel.Win32Exception: アカウント名とセキュリティ ID の間のマッピングは実行されませんでした。
+
+インストールのロールバックを開始しています。
+D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe アセンブリの進行状態については、ログ ファイルの内容を参照してください。
+ファイルは D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog にあります。
+
+ロールバックの段階が正常に完了しました。
+
+トランザクション インストールが完了しました。
