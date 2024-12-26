@@ -1,0 +1,10 @@
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\bin\Debug\UnicodeInputApp.exe.config
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\bin\Debug\UnicodeInputApp.exe
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\bin\Debug\UnicodeInputApp.pdb
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.csproj.AssemblyReference.cache
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.Form1.resources
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.Properties.Resources.resources
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.csproj.GenerateResource.cache
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.csproj.CoreCompileInputs.cache
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.exe
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeInputApp\UnicodeInputApp\obj\Debug\UnicodeInputApp.pdb

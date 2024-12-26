@@ -1,0 +1,95 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|c:\\users\\aoto\\documents\\pu\\pic\\unicode_key\\unicodeinputapp\\unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|solutionrelative:unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|c:\\users\\aoto\\documents\\pu\\pic\\unicode_key\\unicodeinputapp\\unicodeinputapp\\getfromserial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|solutionrelative:unicodeinputapp\\getfromserial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|c:\\users\\aoto\\documents\\pu\\pic\\unicode_key\\unicodeinputapp\\unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|solutionrelative:unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|c:\\users\\aoto\\documents\\pu\\pic\\unicode_key\\unicodeinputapp\\unicodeinputapp\\inputkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|solutionrelative:unicodeinputapp\\inputkey.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "InputKey.cs",
+              "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\InputKey.cs",
+              "RelativeDocumentMoniker": "UnicodeInputApp\\InputKey.cs",
+              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\InputKey.cs",
+              "RelativeToolTip": "UnicodeInputApp\\InputKey.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAkwF8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:07:23.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GetFromSerial.cs",
+              "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\GetFromSerial.cs",
+              "RelativeDocumentMoniker": "UnicodeInputApp\\GetFromSerial.cs",
+              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\GetFromSerial.cs",
+              "RelativeToolTip": "UnicodeInputApp\\GetFromSerial.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:06:34.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs",
+              "RelativeDocumentMoniker": "UnicodeInputApp\\Form1.cs",
+              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs*",
+              "RelativeToolTip": "UnicodeInputApp\\Form1.cs*",
+              "ViewState": "AgIAADIAAAAAAAAAAADgvzYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:05:26.947Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs",
+              "RelativeDocumentMoniker": "UnicodeInputApp\\Form1.cs",
+              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\PIC\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "RelativeToolTip": "UnicodeInputApp\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:05:12.418Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
