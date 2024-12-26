@@ -223,6 +223,8 @@ state_check:
     MOVFW   inp_num
     CALL    change_ASCII
     CALL    send_ASCII	    ;とりまinp_numを送る
+    MOVLW   0x0a	    ;LF
+    CALL    send_ASCII
     
     INCF    state_digit,f
     MOVLW   0x04
@@ -230,6 +232,7 @@ state_check:
     BTFSS   STATUS,Z	    
     RETURN		    ;4以外の時は何もせずに戻る
     CLRF    state_digit	    ;4になったら0に戻す
+    
     RETURN
     
 state0:
@@ -266,6 +269,8 @@ kana:
     MOVFW   inp_num
     CALL    change_ASCII
     CALL    send_ASCII
+    MOVLW   0x0a	    ;LF
+    CALL    send_ASCII
     
     MOVLW   0x03	    ;3桁目まで出力完了
     MOVWF   state_digit
@@ -280,6 +285,8 @@ alphabet:
     CALL    send_ASCII
     MOVFW   inp_num
     CALL    change_ASCII
+    CALL    send_ASCII
+    MOVLW   0x0a	    ;LF
     CALL    send_ASCII
     
     MOVLW   0x03	    ;3桁目まで出力完了
@@ -315,6 +322,8 @@ area4:
 send_digit1:
     MOVFW   inp_num
     CALL    change_ASCII
+    CALL    send_ASCII
+    MOVLW   0x0a	    ;LF
     CALL    send_ASCII
     
     MOVLW   0x01	    ;1桁目まで出力完了

@@ -8,3 +8,13 @@ D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardIn
 D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.exe
 D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.pdb
 D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.UnicodeInputService.resources
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe.config
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.csproj.AssemblyReference.cache
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.ProjectInstaller.resources
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.UnicodeInputService.resources
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.csproj.GenerateResource.cache
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.csproj.CoreCompileInputs.cache
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.exe
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\obj\Debug\UnicodeKeyboardInputService.pdb
+C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.pdb

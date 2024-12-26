@@ -41,3 +41,918 @@ EventLog ソース UnicodeInputService をログ Application に作成してい�
    logtoconsole = 
    assemblypath = D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
    logfile = D:\program\Unicode_key\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をロールバックしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+ソース UnicodeInputService の前の状態にイベント ログを復元しています。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をロールバックしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+ソース UnicodeInputService の前の状態にイベント ログを復元しています。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+サービス 'UnicodeInputService' を停止しようとしました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+警告: ソース UnicodeInputService はローカル コンピューターで登録されていません。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をロールバックしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+ソース UnicodeInputService の前の状態にイベント ログを復元しています。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+警告: ソース UnicodeInputService はローカル コンピューターで登録されていません。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をロールバックしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+ソース UnicodeInputService の前の状態にイベント ログを復元しています。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をロールバックしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+ソース UnicodeInputService の前の状態にイベント ログを復元しています。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+警告: ソース UnicodeInputService はローカル コンピューターで登録されていません。
+サービス UnicodeInputService をシステムから削除しています...
+System.ServiceProcess.ServiceInstaller インストーラーのアンインストール中に例外が発生しました。
+System.ComponentModel.Win32Exception: 指定されたサービスはインストールされたサービスとして存在しません。
+アンインストール中に例外が発生しました。この例外は無視され、アンインストール続行します。ただし、アンインストール完了後、アプリケーションは完全にアンインストールされない可能性があります。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をアンインストールしています。
+該当するパラメーター:
+   logtoconsole = 
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+EventLog ソース UnicodeInputService を削除しています。
+サービス UnicodeInputService をシステムから削除しています...
+サービス 'UnicodeInputService' は正常にシステムから削除されました。
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をインストールしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog
+サービス 'UnicodeInputService' をインストールしています...
+サービス 'UnicodeInputService' は正常にインストールされました。
+EventLog ソース UnicodeInputService をログ Application に作成しています...
+アセンブリ 'C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe' をコミットしています。
+該当するパラメーター:
+   username = aoto\aoto
+   unattended = 
+   logtoconsole = 
+   password = ********
+   assemblypath = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.exe
+   logfile = C:\Users\aoto\Documents\pu\PIC\Unicode_key\UnicodeKeyboardInputService\UnicodeKeyboardInputService\bin\Debug\UnicodeKeyboardInputService.InstallLog

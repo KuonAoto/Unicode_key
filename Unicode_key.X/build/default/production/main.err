@@ -1,12 +1,12 @@
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 68 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 69 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 75 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 79 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 81 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 83 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 85 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 87 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 98 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[302] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 105 : Register in operand not in bank 0.  Ensure that bank bits are correct.
-Message[305] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 198 : Using default destination of 1 (file).
-Warning[205] D:\PROGRAM\UNICODE_KEY\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 374 : Found directive in column 1. (END)
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 68 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 69 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 75 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 79 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 81 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 83 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 85 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 87 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 98 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 105 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 198 : Using default destination of 1 (file).
+Warning[205] C:\USERS\AOTO\DOCUMENTS\PU\PIC\UNICODE_KEY\UNICODE_KEY.X\MAIN.ASM 383 : Found directive in column 1. (END)
