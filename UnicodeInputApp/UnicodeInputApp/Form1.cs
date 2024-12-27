@@ -9,14 +9,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
-using static UnicodeInputApp.InputKey;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+
 
 namespace UnicodeInputApp
 {
     public partial class Form1 : Form
     {
         GetFromSerial GetFromSerial = new GetFromSerial();
-        InputKey InputKey = new InputKey();
         System.Timers.Timer CheckTimer = new System.Timers.Timer();
 
         string unicode_num = "";
@@ -26,20 +26,27 @@ namespace UnicodeInputApp
             InitializeComponent();
         }
 
-        private async void button1_Click(object sender, EventArgs e)
+        private  void button1_Click(object sender, EventArgs e)
         {
-            GetFromSerial.StartSerial();        //シリアル開始
-            SetTimer();
-            //while (true)
+            try
             {
-                //await Loop();
+                GetFromSerial.StartSerial(comboBox1.Text);        //シリアル開始
+                comboBox1.Enabled = false;
+                SetTimer();
             }
-            //this.SetTimer();
+            catch (Exception ex)
+            {
+                MessageBox.Show("接続に失敗しました。\n\n" + ex, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            
+            
 
         }
         private void button2_Click(object sender, EventArgs e)
         {
             this.StopTimer();
+            comboBox1.Enabled = true;
             GetFromSerial.CloseSerialPort();
         }
 
@@ -61,10 +68,28 @@ namespace UnicodeInputApp
             CheckTimer.Stop();
         }
         protected void OnTimer(object sender, EventArgs e)
-        //protected  Task Loop()
+        
         {
             // 定周期処理
-            GetFromSerial.GetUnicode();
+            try
+            {
+                GetFromSerial.GetUnicode();
+
+            }
+            catch (InvalidOperationException　ex)
+            {
+                this.StopTimer();
+                GetFromSerial.CloseSerialPort();
+                MessageBox.Show("ポートを認識できません\n\n"+ex, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
+            catch (Exception ex)
+            {
+                this.StopTimer();
+                GetFromSerial.CloseSerialPort();
+                MessageBox.Show("ポートを閉じました\n\n"+ex, "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                
+            }
             
             if (GetFromSerial.nowtext != "")
             {
@@ -74,14 +99,14 @@ namespace UnicodeInputApp
                 {
                     unicode_num = GetFromSerial.nowtext;
                     unicode_num=unicode_num.Substring(1);
-                    SendKeys.SendWait("U");
-                    SendKeys.SendWait(unicode_num.ToString());
+                    //SendKeys.SendWait("U");
+                    //SendKeys.SendWait(unicode_num.ToString());
                     
                 }
                 else
                 {
                     unicode_num += GetFromSerial.nowtext;
-                    SendKeys.SendWait(GetFromSerial.nowtext);
+                    //SendKeys.SendWait(GetFromSerial.nowtext);
                 }
 
 
@@ -90,18 +115,33 @@ namespace UnicodeInputApp
                 {
                     for (int i = 0; i < unicode_num.Length + 1; i++)
                     {
-                        BSInput();
+                        //SendKeys.SendWait("{bs}");
                     }
                     //unicode_num = unicode_num.Substring(1);   //Uを外す
                     //16進をintに直して、charにしてからstrにする
-                    input_symbol = Convert.ToInt32(unicode_num, 16);
-                    Debug.Write(Char.ConvertFromUtf32(input_symbol));
-                    SendKeys.SendWait(Char.ConvertFromUtf32(input_symbol).ToString());
-                    unicode_num = "";
+
+                    try
+                    {
+                        
+                        input_symbol = Convert.ToInt32(unicode_num, 16);
+                        Debug.Write(Char.ConvertFromUtf32(input_symbol));
+                        SendKeys.SendWait(Char.ConvertFromUtf32(input_symbol).ToString());
+                        unicode_num = "";
+                    }
+                    
+                    catch (Exception)
+                    {
+                        MessageBox.Show("存在しない領域です\n", "エラー", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        
+                    }
+
                 }
             }
         }
 
-        
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

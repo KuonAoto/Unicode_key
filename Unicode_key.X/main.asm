@@ -115,13 +115,18 @@ setup:
     MOVWF   now_d
     MOVWF   old_d
     
+    MOVFW   PORTE	    ;8～Fまでのスイッチの入力を取ってくる
+    ANDLW   b'00000011'	    ;とりまマスク
+    MOVWF   now_e
+    MOVWF   old_e
+    
     CLRF    state_digit
     
 main_loop:
     
     CALL    check_b
     CALL    check_d
-    
+    CALL    check_e
     
     CALL    mov_old
     
@@ -186,6 +191,36 @@ check_d:
     CALL    state_check
     RETURN
     
+    
+check_e: 
+    
+    MOVFW   PORTE	    ;0～7までのスイッチの入力を取ってくる
+    ANDLW   b'00000011'	    ;とりまマスク
+    MOVWF   now_e
+    XORWF   old_e,w	    ;一個昔の値とXORすることで変わったかを判定
+    BTFSC   STATUS,Z	    ;変わってなかったらdのチェックに移る
+    RETURN
+    MOVWF   tmp_xor
+    ANDWF   now_e,w	    ;押したときか離したときか判定
+    BTFSS   STATUS,Z	    ;離した時だった場合dのチェックに移る
+    RETURN	
+    
+    ;押したとき
+    
+    CALL    DLY		    ;チャタリング対策で待つ
+    MOVFW   PORTE	    ;再びとって、
+    ANDLW   b'00000011'	    ;とりまマスク
+    SUBWF   now_e,w	    ;変わってなかったら押した判定
+    BTFSS   STATUS,Z
+    RETURN
+    
+    ;押した判定
+    CALL    check_inpnum    ;0001 0000ー＞4
+    MOVFW   num_count	    ;inp_numに移動
+    MOVWF   inp_num
+    CALL    cr_bs
+    RETURN
+    
 ;tmp_xorに入れてここにとばす
 ;返り値　num_count
 check_inpnum:
@@ -209,6 +244,8 @@ mov_old:
     MOVWF   old_c
     MOVFW   now_d
     MOVWF   old_d
+    MOVFW   now_e
+    MOVWF   old_e 
     RETURN
 
 ;ステートごとの処理
@@ -330,6 +367,46 @@ send_digit1:
     MOVWF   state_digit
     RETURN
     
+cr_bs:
+    MOVF   inp_num,f	;Zフラグだけ更新
+    BTFSS   STATUS,Z
+    GOTO    send_cr
+    ;RE0の時、BS（U00008）をおくる
+    MOVLW   'U'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '8'
+    CALL    send_ASCII
+    MOVLW   0x0a	    ;LF
+    CALL    send_ASCII
+    CLRF    state_digit
+    RETURN
+    ;改行コード（U0000A）をおくる
+send_cr:
+    
+    MOVLW   'U'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   '0'
+    CALL    send_ASCII
+    MOVLW   'A'
+    CALL    send_ASCII
+    MOVLW   0x0a	    ;LF
+    CALL    send_ASCII
+    CLRF    state_digit
+    RETURN
     
     
 ;wレジスタから取る

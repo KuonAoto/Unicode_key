@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO.Ports;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace UnicodeInputApp
 {
@@ -18,28 +20,45 @@ namespace UnicodeInputApp
 
         }
 
-        public void StartSerial()
+        public void StartSerial(string portname)
         {
-            serialPort1.BaudRate = 9600;
-            serialPort1.Parity = Parity.None;
-            serialPort1.DataBits = 8;
-            serialPort1.StopBits = StopBits.One;
-            serialPort1.Handshake = Handshake.None;
-            serialPort1.PortName = "COM5";
-            serialPort1.ReadTimeout = 0;
-            serialPort1.Open();
+            try
+            {
+                serialPort1.BaudRate = 9600;
+                serialPort1.Parity = Parity.None;
+                serialPort1.DataBits = 8;
+                serialPort1.StopBits = StopBits.One;
+                serialPort1.Handshake = Handshake.None;
+                serialPort1.PortName = portname;
+                serialPort1.ReadTimeout = 0;
+                serialPort1.Open();
+            }
+            catch (Exception)
+            {
+                throw ;
+            }
+            
         }
         
-        public async void GetUnicode()
+        public void GetUnicode()
         {
             try
             {
                 nowtext = serialPort1.ReadLine();
             }
-            catch (Exception) {
+            catch (TimeoutException)
+            {
                 nowtext = "";
             }
-            
+            catch (InvalidOperationException e)
+            {
+                
+                throw ;
+            }
+            catch (Exception e) {
+                throw ;
+            }
+
         }
         public void CloseSerialPort()
         {

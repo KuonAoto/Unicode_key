@@ -1,4 +1,4 @@
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  1
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
   00000032            00040         digit1          ;それぞれの桁の数字
   00000033            00041         digit2
   00000034            00042         digit3
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  2
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 0013   3003           00086     MOVLW   b'00000011'     ;RE0とRE1のみ入力
 Message[302]: Register in operand not in bank 0.  Ensure that bank bits are correct.
 0014   0089           00087     MOVWF   TRISE
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  3
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -154,305 +154,394 @@ Message[302]: Register in operand not in bank 0.  Ensure that bank bits are corr
 002E   00AE           00115     MOVWF   now_d
 002F   00A9           00116     MOVWF   old_d
                       00117     
-0030   01B0           00118     CLRF    state_digit
-                      00119     
-0031                  00120 main_loop:
-                      00121     
-0031   2???           00122     CALL    check_b
-0032   2???           00123     CALL    check_d
+0030   0809           00118     MOVFW   PORTE           ;8～Fまでのスイッチの入力を取ってくる
+0031   3903           00119     ANDLW   b'00000011'     ;とりまマスク
+0032   00AF           00120     MOVWF   now_e
+0033   00AA           00121     MOVWF   old_e
+                      00122     
+0034   01B0           00123     CLRF    state_digit
                       00124     
-                      00125     
-0033   2???           00126     CALL    mov_old
-                      00127     
-0034   2???           00128     GOTO    main_loop
-                      00129     
+0035                  00125 main_loop:
+                      00126     
+0035   2???           00127     CALL    check_b
+0036   2???           00128     CALL    check_d
+0037   2???           00129     CALL    check_e
                       00130     
-                      00131     
+0038   2???           00131     CALL    mov_old
                       00132     
-0035                  00133 check_b: 
+0039   2???           00133     GOTO    main_loop
                       00134     
-0035   0806           00135     MOVFW   PORTB           ;0～7までのスイッチの入力を取ってくる
-0036   00AC           00136     MOVWF   now_b
-0037   0627           00137     XORWF   old_b,w         ;一個昔の値とXORすることで変わったかを判定
-0038   1903           00138     BTFSC   STATUS,Z        ;変わってなかったらdのチェックに移る
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  4
+                      00135     
+                      00136     
+                      00137     
+003A                  00138 check_b: 
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-0039   0008           00139     RETURN
-003A   00A2           00140     MOVWF   tmp_xor
-003B   052C           00141     ANDWF   now_b,w         ;押したときか離したときか判定
-003C   1D03           00142     BTFSS   STATUS,Z        ;離した時だった場合dのチェックに移る
-003D   0008           00143     RETURN      
-                      00144     
-                      00145     ;押したとき
-                      00146     
-003E   2???           00147     CALL    DLY             ;チャタリング対策で待つ
-003F   0806           00148     MOVFW   PORTB           ;再びとって、
-0040   022C           00149     SUBWF   now_b,w         ;変わってなかったら押した判定
-0041   1D03           00150     BTFSS   STATUS,Z
-0042   0008           00151     RETURN
-                      00152     
-                      00153     ;押した判定
-0043   2???           00154     CALL    check_inpnum    ;0001 0000ー＞4
-0044   0825           00155     MOVFW   num_count       ;inp_numに移動
-0045   00A3           00156     MOVWF   inp_num
-0046   2???           00157     CALL    state_check
-0047   0008           00158     RETURN
-                      00159     
-                      00160     
-0048                  00161 check_d:
-                      00162     
-0048   0808           00163     MOVFW   PORTD           ;8～Fまでのスイッチの入力を取ってくる
-0049   00AE           00164     MOVWF   now_d
-004A   0629           00165     XORWF   old_d,w         ;一個昔の値とXORすることで変わったかを判定
-004B   1903           00166     BTFSC   STATUS,Z        ;変わってなかったら次のチェックに移る
-004C   0008           00167     RETURN
-004D   00A2           00168     MOVWF   tmp_xor
-004E   052E           00169     ANDWF   now_d,w         ;押したときか離したときか判定
-004F   1D03           00170     BTFSS   STATUS,Z        ;離した時だった場合dのチェックに移る
-0050   0008           00171     RETURN      
-                      00172     
-                      00173     ;押したとき
-                      00174     
-0051   2???           00175     CALL    DLY             ;チャタリング対策で待つ
-0052   0808           00176     MOVFW   PORTD           ;再びとって、
-0053   022E           00177     SUBWF   now_d,w         ;変わってなかったら押した判定
-0054   1D03           00178     BTFSS   STATUS,Z
-0055   0008           00179     RETURN
-                      00180     
-                      00181     ;押した判定
-0056   2???           00182     CALL    check_inpnum    ;0001 0000ー＞4
-0057   3008           00183     MOVLW   0x08
-0058   0725           00184     ADDWF   num_count,w
-0059   00A3           00185     MOVWF   inp_num
-005A   2???           00186     CALL    state_check
-005B   0008           00187     RETURN
-                      00188     
-                      00189 ;tmp_xorに入れてここにとばす
-                      00190 ;返り値　num_count
-005C                  00191 check_inpnum:
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  5
+                      00139     
+003A   0806           00140     MOVFW   PORTB           ;0～7までのスイッチの入力を取ってくる
+003B   00AC           00141     MOVWF   now_b
+003C   0627           00142     XORWF   old_b,w         ;一個昔の値とXORすることで変わったかを判定
+003D   1903           00143     BTFSC   STATUS,Z        ;変わってなかったらdのチェックに移る
+003E   0008           00144     RETURN
+003F   00A2           00145     MOVWF   tmp_xor
+0040   052C           00146     ANDWF   now_b,w         ;押したときか離したときか判定
+0041   1D03           00147     BTFSS   STATUS,Z        ;離した時だった場合dのチェックに移る
+0042   0008           00148     RETURN      
+                      00149     
+                      00150     ;押したとき
+                      00151     
+0043   2???           00152     CALL    DLY             ;チャタリング対策で待つ
+0044   0806           00153     MOVFW   PORTB           ;再びとって、
+0045   022C           00154     SUBWF   now_b,w         ;変わってなかったら押した判定
+0046   1D03           00155     BTFSS   STATUS,Z
+0047   0008           00156     RETURN
+                      00157     
+                      00158     ;押した判定
+0048   2???           00159     CALL    check_inpnum    ;0001 0000ー＞4
+0049   0825           00160     MOVFW   num_count       ;inp_numに移動
+004A   00A3           00161     MOVWF   inp_num
+004B   2???           00162     CALL    state_check
+004C   0008           00163     RETURN
+                      00164     
+                      00165     
+004D                  00166 check_d:
+                      00167     
+004D   0808           00168     MOVFW   PORTD           ;8～Fまでのスイッチの入力を取ってくる
+004E   00AE           00169     MOVWF   now_d
+004F   0629           00170     XORWF   old_d,w         ;一個昔の値とXORすることで変わったかを判定
+0050   1903           00171     BTFSC   STATUS,Z        ;変わってなかったら次のチェックに移る
+0051   0008           00172     RETURN
+0052   00A2           00173     MOVWF   tmp_xor
+0053   052E           00174     ANDWF   now_d,w         ;押したときか離したときか判定
+0054   1D03           00175     BTFSS   STATUS,Z        ;離した時だった場合dのチェックに移る
+0055   0008           00176     RETURN      
+                      00177     
+                      00178     ;押したとき
+                      00179     
+0056   2???           00180     CALL    DLY             ;チャタリング対策で待つ
+0057   0808           00181     MOVFW   PORTD           ;再びとって、
+0058   022E           00182     SUBWF   now_d,w         ;変わってなかったら押した判定
+0059   1D03           00183     BTFSS   STATUS,Z
+005A   0008           00184     RETURN
+                      00185     
+                      00186     ;押した判定
+005B   2???           00187     CALL    check_inpnum    ;0001 0000ー＞4
+005C   3008           00188     MOVLW   0x08
+005D   0725           00189     ADDWF   num_count,w
+005E   00A3           00190     MOVWF   inp_num
+005F   2???           00191     CALL    state_check
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-                      00192     
-005C   01A5           00193     CLRF   num_count    ;カウントリセット
+0060   0008           00192     RETURN
+                      00193     
                       00194     
-005D                  00195 check_inpnum_loop:
-005D   1822           00196     BTFSC   tmp_xor,0       ;0ビット目が0だったら次スキップ
-005E   0008           00197     RETURN
+0061                  00195 check_e: 
+                      00196     
+0061   0809           00197     MOVFW   PORTE           ;0～7までのスイッチの入力を取ってくる
+0062   3903           00198     ANDLW   b'00000011'     ;とりまマスク
+0063   00AF           00199     MOVWF   now_e
+0064   062A           00200     XORWF   old_e,w         ;一個昔の値とXORすることで変わったかを判定
+0065   1903           00201     BTFSC   STATUS,Z        ;変わってなかったらdのチェックに移る
+0066   0008           00202     RETURN
+0067   00A2           00203     MOVWF   tmp_xor
+0068   052F           00204     ANDWF   now_e,w         ;押したときか離したときか判定
+0069   1D03           00205     BTFSS   STATUS,Z        ;離した時だった場合dのチェックに移る
+006A   0008           00206     RETURN      
+                      00207     
+                      00208     ;押したとき
+                      00209     
+006B   2???           00210     CALL    DLY             ;チャタリング対策で待つ
+006C   0809           00211     MOVFW   PORTE           ;再びとって、
+006D   3903           00212     ANDLW   b'00000011'     ;とりまマスク
+006E   022F           00213     SUBWF   now_e,w         ;変わってなかったら押した判定
+006F   1D03           00214     BTFSS   STATUS,Z
+0070   0008           00215     RETURN
+                      00216     
+                      00217     ;押した判定
+0071   2???           00218     CALL    check_inpnum    ;0001 0000ー＞4
+0072   0825           00219     MOVFW   num_count       ;inp_numに移動
+0073   00A3           00220     MOVWF   inp_num
+0074   2???           00221     CALL    cr_bs
+0075   0008           00222     RETURN
+                      00223     
+                      00224 ;tmp_xorに入れてここにとばす
+                      00225 ;返り値　num_count
+0076                  00226 check_inpnum:
+                      00227     
+0076   01A5           00228     CLRF   num_count    ;カウントリセット
+                      00229     
+0077                  00230 check_inpnum_loop:
+0077   1822           00231     BTFSC   tmp_xor,0       ;0ビット目が0だったら次スキップ
+0078   0008           00232     RETURN
 Message[305]: Using default destination of 1 (file).
-005F   0CA2           00198     RRF     tmp_xor         ;右シフト
-0060   0AA5           00199     INCF    num_count,f     ;カウントをインクリメントしてループ
-0061   2???           00200     GOTO    check_inpnum_loop
-                      00201     
-                      00202     
-0062                  00203 mov_old:
-0062   082B           00204     MOVFW   now_a
-0063   00A6           00205     MOVWF   old_a
-0064   082C           00206     MOVFW   now_b
-0065   00A7           00207     MOVWF   old_b
-0066   082D           00208     MOVFW   now_c
-0067   00A8           00209     MOVWF   old_c
-0068   082E           00210     MOVFW   now_d
-0069   00A9           00211     MOVWF   old_d
-006A   0008           00212     RETURN
-                      00213 
-                      00214 ;ステートごとの処理
-                      00215 ;入力したい数字はinp_numに入れて持ってくる
-006B                  00216 state_check:
-006B   3000           00217     MOVLW   0x00
-006C   0230           00218     SUBWF   state_digit,w
-006D   1903           00219     BTFSC   STATUS,Z        ;0だったら0の処理に飛ぶ
-006E   2???           00220     GOTO    state0
-                      00221     
-                      00222     ;0じゃなった場合
-006F   0823           00223     MOVFW   inp_num
-0070   2???           00224     CALL    change_ASCII
-0071   2???           00225     CALL    send_ASCII      ;とりまinp_numを送る
-0072   300A           00226     MOVLW   0x0a            ;LF
-0073   2???           00227     CALL    send_ASCII
-                      00228     
-0074   0AB0           00229     INCF    state_digit,f
-0075   3004           00230     MOVLW   0x04
-0076   0230           00231     SUBWF   state_digit,w
-0077   1D03           00232     BTFSS   STATUS,Z        
-0078   0008           00233     RETURN                  ;4以外の時は何もせずに戻る
-0079   01B0           00234     CLRF    state_digit     ;4になったら0に戻す
-                      00235     
-007A   0008           00236     RETURN
+0079   0CA2           00233     RRF     tmp_xor         ;右シフト
+007A   0AA5           00234     INCF    num_count,f     ;カウントをインクリメントしてループ
+007B   2???           00235     GOTO    check_inpnum_loop
+                      00236     
                       00237     
-007B                  00238 state0:
-                      00239     ;初めのUを送信
-007B   3055           00240     MOVLW   'U'
-007C   2???           00241     CALL    send_ASCII
-                      00242     
-007D   0805           00243     MOVFW   PORTA
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  6
+007C                  00238 mov_old:
+007C   082B           00239     MOVFW   now_a
+007D   00A6           00240     MOVWF   old_a
+007E   082C           00241     MOVFW   now_b
+007F   00A7           00242     MOVWF   old_b
+0080   082D           00243     MOVFW   now_c
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-007E   393F           00244     ANDLW   b'00111111'     ;とりまマスク
-007F   00AB           00245     MOVWF   now_a
-                      00246     
-0080   1C2B           00247     BTFSS   now_a,0         ;RA0が1（押されてない）ならスキップ
-0081   2???           00248     GOTO    alphabet
-0082   1CAB           00249     BTFSS   now_a,1         ;RA1が…
-0083   2???           00250     GOTO    area0
-0084   1D2B           00251     BTFSS   now_a,2
-0085   2???           00252     GOTO    area1
-0086   1DAB           00253     BTFSS   now_a,3
-0087   2???           00254     GOTO    area2
-0088   1E2B           00255     BTFSS   now_a,4
-0089   2???           00256     GOTO    area3
-008A   1EAB           00257     BTFSS   now_a,5
-008B   2???           00258     GOTO    area4
-                      00259         
-008C                  00260 kana:
-                      00261     ;ひらがな入力
-                      00262     ;030に続いて入力されたものを送信
-008C   3030           00263     MOVLW   '0'
-008D   2???           00264     CALL    send_ASCII
-008E   3033           00265     MOVLW   '3'
-008F   2???           00266     CALL    send_ASCII
-0090   3030           00267     MOVLW   '0'
-0091   2???           00268     CALL    send_ASCII
-0092   0823           00269     MOVFW   inp_num
-0093   2???           00270     CALL    change_ASCII
-0094   2???           00271     CALL    send_ASCII
-0095   300A           00272     MOVLW   0x0a            ;LF
-0096   2???           00273     CALL    send_ASCII
+0081   00A8           00244     MOVWF   old_c
+0082   082E           00245     MOVFW   now_d
+0083   00A9           00246     MOVWF   old_d
+0084   082F           00247     MOVFW   now_e
+0085   00AA           00248     MOVWF   old_e 
+0086   0008           00249     RETURN
+                      00250 
+                      00251 ;ステートごとの処理
+                      00252 ;入力したい数字はinp_numに入れて持ってくる
+0087                  00253 state_check:
+0087   3000           00254     MOVLW   0x00
+0088   0230           00255     SUBWF   state_digit,w
+0089   1903           00256     BTFSC   STATUS,Z        ;0だったら0の処理に飛ぶ
+008A   2???           00257     GOTO    state0
+                      00258     
+                      00259     ;0じゃなった場合
+008B   0823           00260     MOVFW   inp_num
+008C   2???           00261     CALL    change_ASCII
+008D   2???           00262     CALL    send_ASCII      ;とりまinp_numを送る
+008E   300A           00263     MOVLW   0x0a            ;LF
+008F   2???           00264     CALL    send_ASCII
+                      00265     
+0090   0AB0           00266     INCF    state_digit,f
+0091   3004           00267     MOVLW   0x04
+0092   0230           00268     SUBWF   state_digit,w
+0093   1D03           00269     BTFSS   STATUS,Z        
+0094   0008           00270     RETURN                  ;4以外の時は何もせずに戻る
+0095   01B0           00271     CLRF    state_digit     ;4になったら0に戻す
+                      00272     
+0096   0008           00273     RETURN
                       00274     
-0097   3003           00275     MOVLW   0x03            ;3桁目まで出力完了
-0098   00B0           00276     MOVWF   state_digit
-0099   0008           00277     RETURN
-                      00278     
-009A                  00279 alphabet:
-009A   3030           00280     MOVLW   '0'
-009B   2???           00281     CALL    send_ASCII
-009C   3030           00282     MOVLW   '0'
-009D   2???           00283     CALL    send_ASCII
-009E   3030           00284     MOVLW   '0'
-009F   2???           00285     CALL    send_ASCII
-00A0   0823           00286     MOVFW   inp_num
-00A1   2???           00287     CALL    change_ASCII
-00A2   2???           00288     CALL    send_ASCII
-00A3   300A           00289     MOVLW   0x0a            ;LF
-00A4   2???           00290     CALL    send_ASCII
-                      00291     
-00A5   3003           00292     MOVLW   0x03            ;3桁目まで出力完了
-00A6   00B0           00293     MOVWF   state_digit
-00A7   0008           00294     RETURN
-                      00295     
-00A8                  00296 area0:
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  7
+0097                  00275 state0:
+                      00276     ;初めのUを送信
+0097   3055           00277     MOVLW   'U'
+0098   2???           00278     CALL    send_ASCII
+                      00279     
+0099   0805           00280     MOVFW   PORTA
+009A   393F           00281     ANDLW   b'00111111'     ;とりまマスク
+009B   00AB           00282     MOVWF   now_a
+                      00283     
+009C   1C2B           00284     BTFSS   now_a,0         ;RA0が1（押されてない）ならスキップ
+009D   2???           00285     GOTO    alphabet
+009E   1CAB           00286     BTFSS   now_a,1         ;RA1が…
+009F   2???           00287     GOTO    area0
+00A0   1D2B           00288     BTFSS   now_a,2
+00A1   2???           00289     GOTO    area1
+00A2   1DAB           00290     BTFSS   now_a,3
+00A3   2???           00291     GOTO    area2
+00A4   1E2B           00292     BTFSS   now_a,4
+00A5   2???           00293     GOTO    area3
+00A6   1EAB           00294     BTFSS   now_a,5
+00A7   2???           00295     GOTO    area4
+                      00296         
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  7
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00A8   3030           00297     MOVLW   '0'
-00A9   2???           00298     CALL    send_ASCII
-00AA   2???           00299     GOTO    send_digit1
-                      00300     
-00AB                  00301 area1:
-00AB   3031           00302     MOVLW   '1'
-00AC   2???           00303     CALL    send_ASCII
-00AD   2???           00304     GOTO    send_digit1
-                      00305 
-00AE                  00306 area2:
-00AE   3032           00307     MOVLW   '2'
-00AF   2???           00308     CALL    send_ASCII
-00B0   2???           00309     GOTO    send_digit1
-                      00310 
-00B1                  00311 area3:
-00B1   3033           00312     MOVLW   '3'
-00B2   2???           00313     CALL    send_ASCII
-00B3   2???           00314     GOTO    send_digit1
+00A8                  00297 kana:
+                      00298     ;ひらがな入力
+                      00299     ;030に続いて入力されたものを送信
+00A8   3030           00300     MOVLW   '0'
+00A9   2???           00301     CALL    send_ASCII
+00AA   3033           00302     MOVLW   '3'
+00AB   2???           00303     CALL    send_ASCII
+00AC   3030           00304     MOVLW   '0'
+00AD   2???           00305     CALL    send_ASCII
+00AE   0823           00306     MOVFW   inp_num
+00AF   2???           00307     CALL    change_ASCII
+00B0   2???           00308     CALL    send_ASCII
+00B1   300A           00309     MOVLW   0x0a            ;LF
+00B2   2???           00310     CALL    send_ASCII
+                      00311     
+00B3   3003           00312     MOVLW   0x03            ;3桁目まで出力完了
+00B4   00B0           00313     MOVWF   state_digit
+00B5   0008           00314     RETURN
                       00315     
-                      00316 ;4は14面
-00B4                  00317 area4:
-00B4   3045           00318     MOVLW   'E'
-00B5   2???           00319     CALL    send_ASCII
-00B6   2???           00320     GOTO    send_digit1
-                      00321     
-00B7                  00322 send_digit1:
-00B7   0823           00323     MOVFW   inp_num
-00B8   2???           00324     CALL    change_ASCII
-00B9   2???           00325     CALL    send_ASCII
-00BA   300A           00326     MOVLW   0x0a            ;LF
-00BB   2???           00327     CALL    send_ASCII
+00B6                  00316 alphabet:
+00B6   3030           00317     MOVLW   '0'
+00B7   2???           00318     CALL    send_ASCII
+00B8   3030           00319     MOVLW   '0'
+00B9   2???           00320     CALL    send_ASCII
+00BA   3030           00321     MOVLW   '0'
+00BB   2???           00322     CALL    send_ASCII
+00BC   0823           00323     MOVFW   inp_num
+00BD   2???           00324     CALL    change_ASCII
+00BE   2???           00325     CALL    send_ASCII
+00BF   300A           00326     MOVLW   0x0a            ;LF
+00C0   2???           00327     CALL    send_ASCII
                       00328     
-00BC   3001           00329     MOVLW   0x01            ;1桁目まで出力完了
-00BD   00B0           00330     MOVWF   state_digit
-00BE   0008           00331     RETURN
+00C1   3003           00329     MOVLW   0x03            ;3桁目まで出力完了
+00C2   00B0           00330     MOVWF   state_digit
+00C3   0008           00331     RETURN
                       00332     
-                      00333     
-                      00334     
-                      00335 ;wレジスタから取る
-00BF                  00336 change_ASCII:
-00BF   390F           00337     ANDLW   0x0F        ;とりまマスク
-00C0   00B6           00338     MOVWF   tmp_ASCII
-00C1   3C09           00339     SUBLW   0x09
-00C2   1C03           00340     BTFSS   STATUS,C    ;9より大きかったらスキップ
-00C3   2???           00341     GOTO    atof
-00C4   3030           00342     MOVLW   0x30
-00C5   0436           00343     IORWF   tmp_ASCII,w
-00C6   0008           00344     RETURN
-00C7                  00345 atof:
-00C7   3009           00346     MOVLW   0x09   
-00C8   02B6           00347     SUBWF   tmp_ASCII,f
-00C9   3040           00348     MOVLW   0x40
-00CA   0436           00349     IORWF   tmp_ASCII,w
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  8
+00C4                  00333 area0:
+00C4   3030           00334     MOVLW   '0'
+00C5   2???           00335     CALL    send_ASCII
+00C6   2???           00336     GOTO    send_digit1
+                      00337     
+00C7                  00338 area1:
+00C7   3031           00339     MOVLW   '1'
+00C8   2???           00340     CALL    send_ASCII
+00C9   2???           00341     GOTO    send_digit1
+                      00342 
+00CA                  00343 area2:
+00CA   3032           00344     MOVLW   '2'
+00CB   2???           00345     CALL    send_ASCII
+00CC   2???           00346     GOTO    send_digit1
+                      00347 
+00CD                  00348 area3:
+00CD   3033           00349     MOVLW   '3'
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  8
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
   VALUE
 
-00CB   0008           00350     RETURN
-                      00351     
+00CE   2???           00350     CALL    send_ASCII
+00CF   2???           00351     GOTO    send_digit1
                       00352     
-                      00353 ;wレジスタに値をいれてここに飛ばす
-00CC                  00354 send_ASCII:
-00CC   1283 1303      00355     banksel TXREG
-                      00356     
-00CE                  00357 send_wait:
-00CE   1E0C           00358     BTFSS   PIR1,TXIF
-00CF   2???           00359     GOTO    send_wait
-00D0   0099           00360     MOVWF   TXREG
-00D1   0008           00361     RETURN
-                      00362     
-                      00363     
-                      00364 ;チャタリング対策wait
-00D2                  00365 DLY:
-                      00366     
-00D2   3064           00367     MOVLW   d'100'   ;0.5ms
-00D3   00B7           00368     MOVWF   CNT1
+                      00353 ;4は14面
+00D0                  00354 area4:
+00D0   3045           00355     MOVLW   'E'
+00D1   2???           00356     CALL    send_ASCII
+00D2   2???           00357     GOTO    send_digit1
+                      00358     
+00D3                  00359 send_digit1:
+00D3   0823           00360     MOVFW   inp_num
+00D4   2???           00361     CALL    change_ASCII
+00D5   2???           00362     CALL    send_ASCII
+00D6   300A           00363     MOVLW   0x0a            ;LF
+00D7   2???           00364     CALL    send_ASCII
+                      00365     
+00D8   3001           00366     MOVLW   0x01            ;1桁目まで出力完了
+00D9   00B0           00367     MOVWF   state_digit
+00DA   0008           00368     RETURN
                       00369     
-00D4                  00370 DLP1:
-00D4   30C8           00371     MOVLW   d'200'  ;0.5ms
-00D5   00B8           00372     MOVWF   CNT2
-                      00373     
-00D6                  00374 DLP2:
-00D6   0000           00375     NOP
-00D7   0000           00376     NOP
-00D8   0BB8           00377     DECFSZ  CNT2,f
-00D9   2???           00378     GOTO    DLP2
-00DA   0BB7           00379     DECFSZ  CNT1,f
-00DB   2???           00380     GOTO    DLP1
-00DC   0008           00381     RETURN
-                      00382     
+00DB                  00370 cr_bs:
+00DB   08A3           00371     MOVF   inp_num,f    ;Zフラグだけ更新
+00DC   1D03           00372     BTFSS   STATUS,Z
+00DD   2???           00373     GOTO    send_cr
+                      00374     ;RE0の時、BS（U00008）をおくる
+00DE   3055           00375     MOVLW   'U'
+00DF   2???           00376     CALL    send_ASCII
+00E0   3030           00377     MOVLW   '0'
+00E1   2???           00378     CALL    send_ASCII
+00E2   3030           00379     MOVLW   '0'
+00E3   2???           00380     CALL    send_ASCII
+00E4   3030           00381     MOVLW   '0'
+00E5   2???           00382     CALL    send_ASCII
+00E6   3030           00383     MOVLW   '0'
+00E7   2???           00384     CALL    send_ASCII
+00E8   3038           00385     MOVLW   '8'
+00E9   2???           00386     CALL    send_ASCII
+00EA   300A           00387     MOVLW   0x0a            ;LF
+00EB   2???           00388     CALL    send_ASCII
+00EC   01B0           00389     CLRF    state_digit
+00ED   0008           00390     RETURN
+                      00391     ;改行コード（U0000A）をおくる
+00EE                  00392 send_cr:
+                      00393     
+00EE   3055           00394     MOVLW   'U'
+00EF   2???           00395     CALL    send_ASCII
+00F0   3030           00396     MOVLW   '0'
+00F1   2???           00397     CALL    send_ASCII
+00F2   3030           00398     MOVLW   '0'
+00F3   2???           00399     CALL    send_ASCII
+00F4   3030           00400     MOVLW   '0'
+00F5   2???           00401     CALL    send_ASCII
+00F6   3030           00402     MOVLW   '0'
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE  9
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00F7   2???           00403     CALL    send_ASCII
+00F8   3041           00404     MOVLW   'A'
+00F9   2???           00405     CALL    send_ASCII
+00FA   300A           00406     MOVLW   0x0a            ;LF
+00FB   2???           00407     CALL    send_ASCII
+00FC   01B0           00408     CLRF    state_digit
+00FD   0008           00409     RETURN
+                      00410     
+                      00411     
+                      00412 ;wレジスタから取る
+00FE                  00413 change_ASCII:
+00FE   390F           00414     ANDLW   0x0F        ;とりまマスク
+00FF   00B6           00415     MOVWF   tmp_ASCII
+0100   3C09           00416     SUBLW   0x09
+0101   1C03           00417     BTFSS   STATUS,C    ;9より大きかったらスキップ
+0102   2???           00418     GOTO    atof
+0103   3030           00419     MOVLW   0x30
+0104   0436           00420     IORWF   tmp_ASCII,w
+0105   0008           00421     RETURN
+0106                  00422 atof:
+0106   3009           00423     MOVLW   0x09   
+0107   02B6           00424     SUBWF   tmp_ASCII,f
+0108   3040           00425     MOVLW   0x40
+0109   0436           00426     IORWF   tmp_ASCII,w
+010A   0008           00427     RETURN
+                      00428     
+                      00429     
+                      00430 ;wレジスタに値をいれてここに飛ばす
+010B                  00431 send_ASCII:
+010B   1283 1303      00432     banksel TXREG
+                      00433     
+010D                  00434 send_wait:
+010D   1E0C           00435     BTFSS   PIR1,TXIF
+010E   2???           00436     GOTO    send_wait
+010F   0099           00437     MOVWF   TXREG
+0110   0008           00438     RETURN
+                      00439     
+                      00440     
+                      00441 ;チャタリング対策wait
+0111                  00442 DLY:
+                      00443     
+0111   3064           00444     MOVLW   d'100'   ;0.5ms
+0112   00B7           00445     MOVWF   CNT1
+                      00446     
+0113                  00447 DLP1:
+0113   30C8           00448     MOVLW   d'200'  ;0.5ms
+0114   00B8           00449     MOVWF   CNT2
+                      00450     
+0115                  00451 DLP2:
+0115   0000           00452     NOP
+0116   0000           00453     NOP
+0117   0BB8           00454     DECFSZ  CNT2,f
+0118   2???           00455     GOTO    DLP2
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 10
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0119   0BB7           00456     DECFSZ  CNT1,f
+011A   2???           00457     GOTO    DLP1
+011B   0008           00458     RETURN
+                      00459     
 Warning[205]: Found directive in column 1. (END)
-27C4 3FFF             00383 END
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE  9
+27C4 3FFF             00460 END
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 11
 
 
 SYMBOL TABLE
@@ -511,7 +600,7 @@ BRG6                              00000006
 BRG7                              00000007
 BRG8                              00000000
 BRG9                              00000001
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 10
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 12
 
 
 SYMBOL TABLE
@@ -570,7 +659,7 @@ CHS0                              00000002
 CHS1                              00000003
 CHS2                              00000004
 CHS3                              00000005
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 11
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 13
 
 
 SYMBOL TABLE
@@ -592,9 +681,9 @@ DC1B0                             00000004
 DC1B1                             00000005
 DC2B0                             00000004
 DC2B1                             00000005
-DLP1                              000000D4
-DLP2                              000000D6
-DLY                               000000D2
+DLP1                              00000113
+DLP2                              00000115
+DLY                               00000111
 D_A                               00000005
 D_NOT_A                           00000005
 ECCPAS                            0000009C
@@ -629,7 +718,7 @@ I2C_STOP                          00000004
 INDF                              00000000
 INTCON                            0000000B
 INTE                              00000004
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 12
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 14
 
 
 SYMBOL TABLE
@@ -688,7 +777,7 @@ P1M0                              00000006
 P1M1                              00000007
 PCL                               00000002
 PCLATH                            0000000A
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 13
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 15
 
 
 SYMBOL TABLE
@@ -747,7 +836,7 @@ RB7                               00000007
 RBIE                              00000003
 RBIF                              00000000
 RC0                               00000000
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 14
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 16
 
 
 SYMBOL TABLE
@@ -806,7 +895,7 @@ SRCON                             00000185
 SREN                              00000005
 SSPADD                            00000093
 SSPBUF                            00000013
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 15
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 17
 
 
 SYMBOL TABLE
@@ -865,7 +954,7 @@ TMR2IE                            00000001
 TMR2IF                            00000001
 TMR2ON                            00000002
 TOUTPS0                           00000003
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 16
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 18
 
 
 SYMBOL TABLE
@@ -924,7 +1013,7 @@ TUN4                              00000004
 TX8_9                             00000006
 TX9                               00000006
 TX9D                              00000000
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 17
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 19
 
 
 SYMBOL TABLE
@@ -983,7 +1072,7 @@ _BOREN_SBODEN                     00003DFF
 _BOR_NSLEEP                       00003EFF
 _BOR_OFF                          00003CFF
 _BOR_ON                           00003FFF
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 18
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 20
 
 
 SYMBOL TABLE
@@ -1042,24 +1131,26 @@ _WRT_HALF                         000039FF
 _WRT_OFF                          00003FFF
 _XT_OSC                           00003FF9
 __16F887                          00000001
-MPASM 5.87                          MAIN.ASM   12-26-2024  0:47:00         PAGE 19
+MPASM 5.87                          MAIN.ASM   12-27-2024  2:13:26         PAGE 21
 
 
 SYMBOL TABLE
   LABEL                             VALUE 
 
-alphabet                          0000009A
-area0                             000000A8
-area1                             000000AB
-area2                             000000AE
-area3                             000000B1
-area4                             000000B4
-atof                              000000C7
-change_ASCII                      000000BF
-check_b                           00000035
-check_d                           00000048
-check_inpnum                      0000005C
-check_inpnum_loop                 0000005D
+alphabet                          000000B6
+area0                             000000C4
+area1                             000000C7
+area2                             000000CA
+area3                             000000CD
+area4                             000000D0
+atof                              00000106
+change_ASCII                      000000FE
+check_b                           0000003A
+check_d                           0000004D
+check_e                           00000061
+check_inpnum                      00000076
+check_inpnum_loop                 00000077
+cr_bs                             000000DB
 digit0                            00000031
 digit1                            00000032
 digit2                            00000033
@@ -1067,9 +1158,9 @@ digit3                            00000034
 digit4                            00000035
 inp_func                          00000024
 inp_num                           00000023
-kana                              0000008C
-main_loop                         00000031
-mov_old                           00000062
+kana                              000000A8
+main_loop                         00000035
+mov_old                           0000007C
 now_a                             0000002B
 now_b                             0000002C
 now_c                             0000002D
@@ -1081,12 +1172,13 @@ old_b                             00000027
 old_c                             00000028
 old_d                             00000029
 old_e                             0000002A
-send_ASCII                        000000CC
-send_digit1                       000000B7
-send_wait                         000000CE
+send_ASCII                        0000010B
+send_cr                           000000EE
+send_digit1                       000000D3
+send_wait                         0000010D
 setup                             00000000
-state0                            0000007B
-state_check                       0000006B
+state0                            00000097
+state_check                       00000087
 state_digit                       00000030
 status_tmp                        00000021
 tmp_ASCII                         00000036
