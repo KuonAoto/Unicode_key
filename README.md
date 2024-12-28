@@ -12,7 +12,7 @@ Unicodeを直接入力できるキーボードのソースコードです。
 
 PICには[hexファイル](./Unicode_key.X/dist/default/production/Unicode_key.X.production.hex)を書き込んでください。  
 PCと接続して、TeraTermなどで「1」を押したときに「U3001」や「1」などと出てくればハードウェア側はOKです。  
-PC側のアプリケーションをダウンロードしてください。[ここ](./UnicodeInputApp/UnicodeInputApp/bin/Debug/UnicodeInputApp.exe)にあります。  
+[PC側のアプリケーション](./UnicodeInputApp/UnicodeInputApp/bin/Debug/UnicodeInputApp.exe)をダウンロードしてください。
 起動してポート番号を選択、接続を押せば入力できるようになります。
 
 
@@ -20,7 +20,7 @@ PC側のアプリケーションをダウンロードしてください。[こ�
 
 [./Unicode_key.X](./Unicode_key.X)  
 キーボード本体の制御をしています。  
-各ピンからの入力を受け取ってUTF8で送るだけです。
+各ピンからの入力を受け取ってUTF8で送るだけです。  
 言語はアセンブラです。    
 コードは[ここ](Unicode_key.X/main.asm)  
 
@@ -29,6 +29,7 @@ PC側のアプリケーションをダウンロードしてください。[こ�
 
 [./UnicodeInputApp](./UnicodeInputApp)  
 シリアルポートから読み取ってSendKey関数でキーボード入力しています。  
+汚くてすいません。
 言語はC#です。  
 メインのコードは[ここ](./UnicodeInputApp/UnicodeInputApp/Form1.cs)  
 
