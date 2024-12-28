@@ -12,7 +12,7 @@ Unicodeを直接入力できるキーボードのソースコードです。
 
 PICには[hexファイル](./Unicode_key.X/dist/default/production/Unicode_key.X.production.hex)を書き込んでください。  
 PCと接続して、TeraTermなどで「1」を押したときに「U3001」や「1」などと出てくればハードウェア側はOKです。  
-[PC側のアプリケーション](./UnicodeInputApp/UnicodeInputApp/bin/Debug/UnicodeInputApp.exe)をダウンロードしてください。
+[PC側のアプリケーション](./UnicodeInputApp/UnicodeInputApp/bin/Debug/UnicodeInputApp.exe)をダウンロードしてください。  
 起動してポート番号を選択、接続を押せば入力できるようになります。
 
 
