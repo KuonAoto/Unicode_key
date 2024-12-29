@@ -33,6 +33,7 @@ namespace UnicodeInputApp
                 GetFromSerial.StartSerial(comboBox1.Text);        //シリアル開始
                 comboBox1.Enabled = false;
                 SetTimer();
+                button1.Enabled = false;
             }
             catch (Exception ex)
             {
@@ -45,6 +46,7 @@ namespace UnicodeInputApp
         }
         private void button2_Click(object sender, EventArgs e)
         {
+            button1.Enabled = true;
             this.StopTimer();
             comboBox1.Enabled = true;
             GetFromSerial.CloseSerialPort();
