@@ -131,7 +131,7 @@ namespace UnicodeInputApp
                         Debug.Write(input_str);
 
                         // https://stackoverflow.com/questions/18299216/send-special-character-with-sendkeys
-                        SendKeys.SendWait(Regex.Replace(input_str, "[+^%~()]", "{$0}"));
+                        SendKeys.SendWait(Regex.Replace(input_str, "[+^%~()\\{\\}]", "{$0}"));
                         unicode_num = "";
                     }
                     
