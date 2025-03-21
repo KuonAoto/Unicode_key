@@ -6,6 +6,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Forms;
@@ -126,8 +127,11 @@ namespace UnicodeInputApp
                     {
                         
                         input_symbol = Convert.ToInt32(unicode_num, 16);
-                        Debug.Write(Char.ConvertFromUtf32(input_symbol));
-                        SendKeys.SendWait(Char.ConvertFromUtf32(input_symbol).ToString());
+                        var input_str = Char.ConvertFromUtf32(input_symbol).ToString();
+                        Debug.Write(input_str);
+
+                        // https://stackoverflow.com/questions/18299216/send-special-character-with-sendkeys
+                        SendKeys.SendWait(Regex.Replace(input_str, "[+^%~()\\{\\}]", "{$0}"));
                         unicode_num = "";
                     }
                     
