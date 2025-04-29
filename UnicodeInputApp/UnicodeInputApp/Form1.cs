@@ -96,31 +96,44 @@ namespace UnicodeInputApp
             
             if (GetFromSerial.nowtext != "")
             {
-                //SendKeys.Send("🀃");
                 //Uで始まったら
                 if (GetFromSerial.nowtext.StartsWith("U"))
                 {
                     unicode_num = GetFromSerial.nowtext;
-                    unicode_num=unicode_num.Substring(1);
-                    //SendKeys.SendWait("U");
-                    //SendKeys.SendWait(unicode_num.ToString());
+                    unicode_num=unicode_num.Substring(1);   //最初のUを除く
                     
                 }
                 else
                 {
                     unicode_num += GetFromSerial.nowtext;
-                    //SendKeys.SendWait(GetFromSerial.nowtext);
                 }
 
+                //第14面で A, D, E, F をそれぞれ {UP}, {LEFT}, {DOWN}, {RIGHT} に変換
+                // EA で始まるなら {UP}、などとする
+                if (unicode_num.StartsWith("EA"))
+                {
+                    SendKeys.SendWait("{UP}"); unicode_num = "";
+                    unicode_num = "";
+                }
+                else if (unicode_num.StartsWith("ED"))
+                {
+                    SendKeys.SendWait("{LEFT}"); unicode_num = "";
+                    unicode_num = "";
+                }
+                else if (unicode_num.StartsWith("EE"))
+                {
+                    SendKeys.SendWait("{DOWN}"); unicode_num = "";
+                    unicode_num = "";
+                }
+                else if (unicode_num.StartsWith("EF"))
+                {
+                    SendKeys.SendWait("{RIGHT}"); unicode_num = "";
+                    unicode_num = "";
+                }
 
                 //受信したUnicodeが6文字以上になったら
                 if (unicode_num.Length >= 5)
                 {
-                    for (int i = 0; i < unicode_num.Length + 1; i++)
-                    {
-                        //SendKeys.SendWait("{bs}");
-                    }
-                    //unicode_num = unicode_num.Substring(1);   //Uを外す
                     //16進をintに直して、charにしてからstrにする
 
                     try

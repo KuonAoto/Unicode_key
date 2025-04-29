@@ -1,12 +1,12 @@
 MPLINK 5.09, LINKER
-Linker Map File - Created Fri Dec 27 02:13:27 2024
+Linker Map File - Created Tue Apr 29 19:37:46 2025
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                  RES_VECT       code   0x000000    program   0x000002
                    .cinit    romdata   0x000001    program   0x000004
-                MAIN_PROG       code   0x000003    program   0x000238
+                MAIN_PROG       code   0x000003    program   0x000252
 .config_2007_BUILD/DEFAULT/PRODUCTION/MAIN.O       code   0x002007    program   0x000002
 .config_2008_BUILD/DEFAULT/PRODUCTION/MAIN.O       code   0x002008    program   0x000002
 
@@ -15,76 +15,78 @@ Linker Map File - Created Fri Dec 27 02:13:27 2024
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x00011e      
+                            0x000000    0x00012b      
                             0x002007    0x002008      
-            289 out of 8455 program addresses used, program memory utilization is 3%
+            302 out of 8455 program addresses used, program memory utilization is 3%
 
 
 
                               Symbols - Sorted by Name
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                     DLP1   0x000116    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     DLP2   0x000118    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                      DLY   0x000114    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    START   0x000003    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                 alphabet   0x0000b9    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area0   0x0000c7    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area1   0x0000ca    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area2   0x0000cd    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area3   0x0000d0    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area4   0x0000d3    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     atof   0x000109    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-             change_ASCII   0x000101    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  check_b   0x00003d    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  check_d   0x000050    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  check_e   0x000064    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-             check_inpnum   0x000079    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-        check_inpnum_loop   0x00007a    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    cr_bs   0x0000de    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     kana   0x0000ab    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                main_loop   0x000038    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  mov_old   0x00007f    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-               send_ASCII   0x00010e    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  send_cr   0x0000f1    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-              send_digit1   0x0000d6    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                send_wait   0x000110    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    setup   0x000003    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                   state0   0x00009a    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-              state_check   0x00008a    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
+                     DLP1   0x000123    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     DLP2   0x000125    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                      DLY   0x000121    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    START   0x000003    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                 alphabet   0x0000b9    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area0   0x0000c7    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area1   0x0000ca    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area2   0x0000cd    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area3   0x0000d0    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area4   0x0000d3    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     atof   0x000116    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+             change_ASCII   0x00010e    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  check_b   0x00003d    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  check_d   0x000050    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  check_e   0x000064    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+             check_inpnum   0x000079    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+        check_inpnum_loop   0x00007a    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    cr_bs   0x0000eb    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     kana   0x0000ab    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                main_loop   0x000038    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  mov_old   0x00007f    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+               send_ASCII   0x00011b    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  send_cr   0x0000fe    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+              send_digit1   0x0000e3    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                send_func   0x0000e1    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                send_wait   0x00011d    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    setup   0x000003    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                   state0   0x00009a    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+              state_check   0x00008a    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
 
 
 
                               Symbols - Sorted by Address
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
-                    setup   0x000003    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    START   0x000003    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                main_loop   0x000038    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  check_b   0x00003d    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  check_d   0x000050    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  check_e   0x000064    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-             check_inpnum   0x000079    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-        check_inpnum_loop   0x00007a    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  mov_old   0x00007f    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-              state_check   0x00008a    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                   state0   0x00009a    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     kana   0x0000ab    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                 alphabet   0x0000b9    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area0   0x0000c7    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area1   0x0000ca    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area2   0x0000cd    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area3   0x0000d0    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    area4   0x0000d3    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-              send_digit1   0x0000d6    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                    cr_bs   0x0000de    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                  send_cr   0x0000f1    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-             change_ASCII   0x000101    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     atof   0x000109    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-               send_ASCII   0x00010e    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                send_wait   0x000110    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                      DLY   0x000114    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     DLP1   0x000116    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
-                     DLP2   0x000118    program     static C:\Users\aoto\Documents\pu\PIC\Unicode_key\Unicode_key.X\main.asm
+                    setup   0x000003    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    START   0x000003    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                main_loop   0x000038    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  check_b   0x00003d    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  check_d   0x000050    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  check_e   0x000064    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+             check_inpnum   0x000079    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+        check_inpnum_loop   0x00007a    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  mov_old   0x00007f    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+              state_check   0x00008a    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                   state0   0x00009a    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     kana   0x0000ab    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                 alphabet   0x0000b9    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area0   0x0000c7    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area1   0x0000ca    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area2   0x0000cd    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area3   0x0000d0    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    area4   0x0000d3    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                send_func   0x0000e1    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+              send_digit1   0x0000e3    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                    cr_bs   0x0000eb    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                  send_cr   0x0000fe    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+             change_ASCII   0x00010e    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     atof   0x000116    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+               send_ASCII   0x00011b    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                send_wait   0x00011d    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                      DLY   0x000121    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     DLP1   0x000123    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
+                     DLP2   0x000125    program     static C:\Users\aoto\Documents\pu\git\Unicode_key\Unicode_key.X\main.asm
 
 

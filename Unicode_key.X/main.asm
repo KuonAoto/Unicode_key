@@ -354,7 +354,25 @@ area3:
 area4:
     MOVLW   'E'
     CALL    send_ASCII
-    GOTO    send_digit1
+    MOVFW   inp_num
+    CALL    change_ASCII
+    CALL    send_ASCII
+    MOVLW   0x0a	    ;LF
+    CALL    send_ASCII
+    
+    ;14面8以降のキーはファンクションにするための分岐
+    MOVFW   inp_num
+    SUBLW   0x07
+    BTFSS   STATUS,C
+    GOTO    send_func
+    
+    MOVLW   0x01	    ;1桁目まで出力完了
+    MOVWF   state_digit
+    RETURN
+    
+send_func:
+    CLRF   state_digit	    ;ステータスを0に戻す
+    RETURN
     
 send_digit1:
     MOVFW   inp_num
@@ -366,7 +384,7 @@ send_digit1:
     MOVLW   0x01	    ;1桁目まで出力完了
     MOVWF   state_digit
     RETURN
-    
+
 cr_bs:
     MOVF   inp_num,f	;Zフラグだけ更新
     BTFSS   STATUS,Z
