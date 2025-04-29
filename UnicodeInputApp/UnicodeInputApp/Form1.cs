@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -17,6 +18,13 @@ namespace UnicodeInputApp
 {
     public partial class Form1 : Form
     {
+        [DllImport("user32.dll")]
+        public static extern void keybd_event(byte bVk, byte bScan, uint dwFlags, UIntPtr dwExtraInfo);
+
+        const byte VK_KANA = 0x19; // 半角/全角キーの仮想キーコード
+
+
+
         GetFromSerial GetFromSerial = new GetFromSerial();
         System.Timers.Timer CheckTimer = new System.Timers.Timer();
 
@@ -113,23 +121,35 @@ namespace UnicodeInputApp
                 if (unicode_num.StartsWith("EA"))
                 {
                     SendKeys.SendWait("{UP}"); unicode_num = "";
-                    unicode_num = "";
                 }
                 else if (unicode_num.StartsWith("ED"))
                 {
                     SendKeys.SendWait("{LEFT}"); unicode_num = "";
-                    unicode_num = "";
                 }
                 else if (unicode_num.StartsWith("EE"))
                 {
                     SendKeys.SendWait("{DOWN}"); unicode_num = "";
-                    unicode_num = "";
                 }
                 else if (unicode_num.StartsWith("EF"))
                 {
                     SendKeys.SendWait("{RIGHT}"); unicode_num = "";
+                }
+                //Shift+Enter
+                else if (unicode_num.StartsWith("EB"))
+                {
+                    SendKeys.SendWait("+{ENTER}"); unicode_num = "";
+                }
+                else if (unicode_num.StartsWith("EC"))
+                {
+                    SendKeys.SendWait(" "); unicode_num = "";
+                }
+                else if (unicode_num.StartsWith("E8"))
+                {
+                    keybd_event(VK_KANA, 0, 0, UIntPtr.Zero);
+                    keybd_event(VK_KANA, 0, 2, UIntPtr.Zero);
                     unicode_num = "";
                 }
+
 
                 //受信したUnicodeが6文字以上になったら
                 if (unicode_num.Length >= 5)

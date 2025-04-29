@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|c:\\users\\aoto\\documents\\pu\\git\\unicode_key\\unicodeinputapp\\unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|solutionrelative:unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|c:\\users\\aoto\\documents\\pu\\git\\unicode_key\\unicodeinputapp\\unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{5B9EC281-9A52-48BA-ACAA-1FB7E390F769}|UnicodeInputApp\\UnicodeInputApp.csproj|solutionrelative:unicodeinputapp\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,28 +38,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs",
-              "RelativeDocumentMoniker": "UnicodeInputApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "RelativeToolTip": "UnicodeInputApp\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-26T09:05:12.418Z",
-              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs",
               "RelativeDocumentMoniker": "UnicodeInputApp\\Form1.cs",
-              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs",
-              "RelativeToolTip": "UnicodeInputApp\\Form1.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAADwv4MAAAARAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs*",
+              "RelativeToolTip": "UnicodeInputApp\\Form1.cs*",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-26T09:05:26.947Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [\u30C7\u30B6\u30A4\u30F3]",
+              "DocumentMoniker": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs",
+              "RelativeDocumentMoniker": "UnicodeInputApp\\Form1.cs",
+              "ToolTip": "C:\\Users\\aoto\\Documents\\pu\\git\\Unicode_key\\UnicodeInputApp\\UnicodeInputApp\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "RelativeToolTip": "UnicodeInputApp\\Form1.cs [\u30C7\u30B6\u30A4\u30F3]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-26T09:05:12.418Z",
+              "EditorCaption": " [\u30C7\u30B6\u30A4\u30F3]"
             },
             {
               "$type": "Document",
@@ -83,8 +83,7 @@
               "RelativeToolTip": "UnicodeInputApp\\Form1.Designer.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAuwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:22:02.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-27T09:22:02.368Z"
             }
           ]
         }
